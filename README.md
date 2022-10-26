@@ -42,3 +42,6 @@ Python scripts for exporting memories and conversations from your Snapchat accou
 
 ## Feedback, questions, problems
 All can be reported to [Tikolu](https://tikolu.net/contact).
+
+## Credits
+All code by [Tikolu](https://tikolu.net). Special thanks to Anna Z. for inspiration, testing and mental support.
