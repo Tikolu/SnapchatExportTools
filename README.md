@@ -28,7 +28,7 @@ Python scripts for exporting memories and conversations from your Snapchat accou
 * Open `export_memories.py` and the script will start downloading all memories saved in the `memories_history.json` file, saving them to the `memories` folder.
 * Images are saved as JPG files, videos are saved as MP4 files.
 * The actual date and time of each file is also saved, so memories can be easily imported into a service such as Google Photos without messing up file order. 
-* Files are only available for export for 7 days since downloading the data from Snapchat. After this period of time has elapsed, you will need to submit another request and download a new ZIP file of you have still not exported all of your files.
+* Files are only available for export for 7 days since downloading the data from Snapchat. After this period of time has elapsed, you will need to submit another request and download a new ZIP file if you have still not exported all of your files.
 * Please note: Some (especially older) videos file are saved in the `mp4v` codec, which might not play correctly.
   * [VLC Media Player](https://videolan.org/vlc) can open these files.
   * The following `ffmpeg` command can be used to save the first frame of such files as a normal JPG image:
