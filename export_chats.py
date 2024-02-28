@@ -45,13 +45,7 @@ for section in sections:
 	counter += amount
 	print(f"{section} contains {amount} messages")
 	for message in sections[section]:
-		if "To" in message:
-			chat = message.pop("To")
-			message["From"] = username
-		elif "From" in message:
-			chat = message["From"]
-		else:
-			chat = "Unknown"
+		chat = section
 		if not chat in chats:
 			chats[chat] = []
 		message["Type"] = message.pop("Media Type")
