@@ -89,7 +89,7 @@ for chat in chats:
 					last_date = date
 				f.write(f"<section{' right' if message['From'] == username else ''}>")
 				if message["Type"] == "TEXT":
-					f.write(f"<div>{message['Text']}</div>")
+					f.write(f"<div>{message.get('Text', '<i>(no text)</i>')}</div>")
 				else:
 					f.write(f"<b>({message['Type']})</b><br>")
 				f.write(f"<small>{time}</small>")
