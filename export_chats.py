@@ -76,6 +76,7 @@ for chat in chats:
 				section[right] {text-align:right}
 				section[right] div {margin-left:auto;background-color:unset;border:1px solid #cde}
 				div {background-color:#cde;border-radius:0.5em;width:max-content;max-width:80vw;padding:0.5em}
+				small {font-size:0.8em}
 			""")
 			f.write("</style></head><body>")
 			f.write(f"<h1>{chat}</h1>\n")
@@ -92,7 +93,7 @@ for chat in chats:
 					f.write(f"<div>{message.get('Text', '<i>(no text)</i>')}</div>")
 				else:
 					f.write(f"<b>({message['Type']})</b><br>")
-				f.write(f"<small>{time}</small>")
+				f.write(f"<small>{message['From']} - {time}</small>")
 				f.write("</section>\n")
 
 		elif format == 2:
