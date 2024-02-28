@@ -56,7 +56,7 @@ for section in sections:
 			chats[chat] = []
 		message["Type"] = message.pop("Media Type")
 		if message["Type"] != "TEXT":
-			mydict.pop("Text", None)
+			message.pop("Text", None)
 		message["Date"] = int(datetime.timestamp(datetime.strptime(message.pop("Created", message.pop("Date", None)), "%Y-%m-%d %H:%M:%S %Z")))
 		chats[chat].append(message)
 
